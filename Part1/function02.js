@@ -93,3 +93,26 @@ function add_all(...number){
 }
 const total = add_all(1,3,3,4,5,6,6,7)
 console.log(total)
+
+//CALL BY FUNCTION 
+function myfunc(){
+    console.log("my function")
+}
+function myfunc2(a){
+    console.log("thank you!")
+}
+
+// const callback = myfunc2(myfunc)
+// callback()
+
+//FUNCTION RETURNING FUNCTION
+
+const person = function(name,age){
+    console.log("function returning function")
+    return function(){
+        console.log(name)
+        console.log(age)
+    }
+}
+const personInfo = person("ambuj",40)
+personInfo()
