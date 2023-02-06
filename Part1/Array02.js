@@ -7,7 +7,7 @@
 //for each is a array important properties
 //it return array value and its index
 
-const arr1 = [2,4,5,6,6,7]
+const arr1 = [2,10,5,6,6,7]
 //task= print array element and index value
 // for(let i in arr1){
 //     console.log(` the value is ${arr1[i]} and index is ${i}`)
@@ -64,4 +64,45 @@ function product_total(accumalator,currentvalue){
 const result = arr3.reduce(product_total)
 console.log(result)
 
+//Short method in js
+console.log(arr1.sort())// IT short the value with ASCII value
+fruits = ["apple","man","grapes"]
+console.log(fruits.sort())
+arr1.sort((a,b)=>{
+    return b-a;
+})
+console.log(arr1)
 
+//realstic example
+const product_detail = [
+    {productID:1,productName:"product1",price:10000},
+    {productId:2,productName:"product2",price:2000000},
+    {productId:101,productName:"product3",price:3000},
+    {productId:101,productName:"product4",price:4000}
+]
+
+//price low to high
+console.log(product_detail)
+const low_to_high = product_detail.slice(0).sort((a,b)=> a.price-b.price);
+console.log(low_to_high)
+
+//FIND METHOD
+//find method is used to find the value prsent in array or not
+const f = fruits.find((n) => n.length==4)
+console.log(f)
+
+//exaple
+
+const pri = product_detail.find((product_price)=>product_price.price>=4000)
+console.log(pri)
+
+//Every method 
+//it check the alll the elemnt of the array and return true or false
+
+const my_array = [2,12,4,8,8,6]
+const output = my_array.every((n)=>n%2==0);
+console.log(output)
+
+
+const every_me = product_detail.every((n)=>n.price>=2000)
+console.log(every_me)
