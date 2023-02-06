@@ -101,8 +101,28 @@ console.log(pri)
 
 const my_array = [2,12,4,8,8,6]
 const output = my_array.every((n)=>n%2==0);
-console.log(output)
+//console.log(output)
 
 
 const every_me = product_detail.every((n)=>n.price>=2000)
-console.log(every_me)
+//console.log(every_me)
+
+//SOME METHOD
+//it can apply one element in Array
+const check_element = my_array.some((n)=>n%2==0);
+console.log(check_element)
+
+//splice method
+//it take three value
+//start,delete,insert element
+
+//my_array.splice(3,3,"inserted value1","inseted_value2")
+//console.log(my_array)
+
+//FILL METHOD
+//fill the array with value
+//it take three value=>value,start,end
+const my_array2 = new Array(7).fill(0)
+console.log(my_array2)
+
+console.log(my_array.fill(2,3,6))
