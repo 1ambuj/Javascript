@@ -9,7 +9,7 @@
 // console.log(document)
 
 //element select by quary selector
-//const btn = document.querySelectorAll("#main-heading")//it give all the id r class
+//const btn = document.querySelectorAll("#main-heading")//it give all the id 0r class
 //console.log(btn)
 
 const heading = document.querySelector("#main-heading")
@@ -18,6 +18,8 @@ console.log(heading.textContent)//it return all the text prsent in web page even
 //const main_heading = heading.style.color = "blue"
 //console.log(heading.innerHTML)
 console.log(heading.innerText)//it return only actual content which are present in webpage
+
+
 
 
 
