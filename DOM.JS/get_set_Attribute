@@ -1,0 +1,62 @@
+//get attribute in js
+//set attribute in js
+
+// const get_element = document.querySelector(".form-todo input")//we can get the attribute
+// console.log(get_element.getAttribute("type"))
+// get_element.setAttribute("type","button")//we can set the attribute
+// console.log(get_element.getAttribute("type"))
+
+//console.log(get)
+
+// const anchor = document.querySelector("a")//we can not set at a time attribute of multipule element
+// console.log(anchor.getAttribute("href"))
+// anchor.setAttribute("href","#my_id")
+// console.log(anchor.getAttribute("href"))
+
+//GET MULLTIPULE ELEMENT BY USING GET ELEMENT BY CLASS NAME
+
+const nav_item = document.getElementsByTagName("a")//it gives HTMLcollection
+//it is a array like object
+//we can apply loop on the elemnet 
+//simple for loop
+//for of loop
+//we can not use for each method in getelement by class name
+// for(let i = 0; i<=nav_item.length; i++){
+//     const bg_colour = nav_item[i].style.backgroundColor = "white"
+//     nav_item[i].style.color = "blue"
+//     nav_item[i].style.fontWeight = "bold"
+// }
+
+//nav_item[2].style.color = "red"//we chnage color of third nav element
+//for of loop in
+// for(let item of nav_item){
+//     console.log(item)
+// }
+
+//When we want to convert into array we can use
+const arr1 = Array.from(nav_item)
+
+console.log(Array.isArray(arr1))
+
+
+//QUERY SELLCTOR ALL IT RETURN NODELIST
+//we can use loop in nodelist
+//simple for loop 
+//for of loop
+//forEach loop also
+// const nav = document.querySelectorAll("a")
+// console.log(nav[2])
+
+
+//we can get the inner html
+const inner_value = document.querySelector(".list")//can get the inner htm by using the method of innerHTML
+inner_value.innerHTML = "<a href=\"\"> Html </a>"//can change the value of inner html
+console.log(inner_value)
+
+
+
+
+
+
+
+
