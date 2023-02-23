@@ -47,15 +47,29 @@
 
 //EVENT OBJECT
 const firstButton = document.querySelector("button")
-firstButton.addEventListener("click",function(){
-    console.log("click me!!")
-})
+//firstButton.addEventListener("click",function(){
+    //console.log("click me!!")
+//})
 
 //browser contain some thing
 //1)browser ---> js engine + some api
 //when any event accour  java cript give the callback function and some information
 
-const firs_btn = document.querySelector("button")
-firstButton.addEventListener("click",(a)=>{
-    console.log(a.currentTarget)
-})
+// const firs_btn = document.querySelector("button")
+// firstButton.addEventListener("click",(a)=>{
+//     console.log(a.currentTarget)
+// })
+
+//behaind the seen working of js
+
+const allbutton = document.querySelectorAll(".my-button button")
+for(let button of allbutton){
+    button.addEventListener("click",(e)=>{
+        e.target.style.backgroundColor = "red"
+        e.target.style.Color = "blue"
+        
+        
+    })
+}
+
+
