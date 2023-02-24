@@ -62,14 +62,35 @@ const firstButton = document.querySelector("button")
 
 //behaind the seen working of js
 
-const allbutton = document.querySelectorAll(".my-button button")
-for(let button of allbutton){
-    button.addEventListener("click",(e)=>{
-        e.target.style.backgroundColor = "red"
-        e.target.style.Color = "blue"
+// const allbutton = document.querySelectorAll(".my-button button")
+// for(let button of allbutton){
+//     button.addEventListener("click",(e)=>{
+//         e.target.style.backgroundColor = "red"
+//         e.target.style.Color = "blue"
         
         
-    })
-}
+//     })
+// }
+
+
+//keypress event
+//mouseover evnt 
+//mouseleave event
+console.log("hello world!")
+const keypress_event = document.querySelector(".btn2")
+console.log(keypress_event)
+const body = document.body;
+body.addEventListener("keypress",(e)=>{
+       console.log(e.key)
+})
+
+keypress_event.addEventListener("mouseover",()=>{
+    console.log("mouse over event occurd !")
+})
+
+keypress_event.addEventListener("mouseleave",()=>{
+    console.log("mouse leave event occurd !")
+})
+
 
 
