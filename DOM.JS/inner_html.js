@@ -1,5 +1,5 @@
 //CLASS LIST
-//we can work with class we can acces the class see the include clsss addd the class and many more
+//we can work with class we can acces the class see the include clsss add the class and many more
 
 const element_class = document.querySelector(".to-do")
 //console.log(element_class.classList)
@@ -44,10 +44,13 @@ const element_class = document.querySelector(".to-do")
 
 //before and after method
 
-const tag = document.createElement("li")
-tag.textContent = "my text"
-const take_element = document.querySelector(".todo-list")
-take_element.before(tag)
-take_element.after(tag)
-//console.log(take_element)
+// const tag = document.createElement("li")
+// tag.textContent = "my text"
+// const take_element = document.querySelector(".todo-list")
+// take_element.before(tag)
+// take_element.after(tag)
+// //console.log(take_element
+
+const btn = document.querySelector(".btn")
+btn.classList.remove(".btn2")
 

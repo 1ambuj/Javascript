@@ -2,7 +2,7 @@
 //document object model the fils are prsent in the form of object 
 //object called the document and add in window object
 
-// const main_heading = document.getElementById("main-heading")
+// const main_heading = document.getElementById("#main-heading")
 // const text_content = main_heading.textContent
 // main_heading.textContent = "this is somting else"
 // console.log(main_heading)

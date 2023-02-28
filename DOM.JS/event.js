@@ -76,21 +76,27 @@ const firstButton = document.querySelector("button")
 //keypress event
 //mouseover evnt 
 //mouseleave event
-console.log("hello world!")
-const keypress_event = document.querySelector(".btn2")
-console.log(keypress_event)
-const body = document.body;
-body.addEventListener("keypress",(e)=>{
-       console.log(e.key)
-})
+// console.log("hello world!")
+// const keypress_event = document.querySelector(".btn2")
+// console.log(keypress_event)
+// const body = document.body;
+// body.addEventListener("keypress",(e)=>{
+//        console.log(e.key)
+// })
 
-keypress_event.addEventListener("mouseover",()=>{
-    console.log("mouse over event occurd !")
-})
+// keypress_event.addEventListener("mouseover",()=>{
+//     console.log("mouse over event occurd !")
+// })
 
-keypress_event.addEventListener("mouseleave",()=>{
-    console.log("mouse leave event occurd !")
-})
+// keypress_event.addEventListener("mouseleave",()=>{
+//     console.log("mouse leave event occurd !")
+// })
 
 
-
+//click event 
+const my_event = document.querySelectorAll(".my-button")
+for(let event of my_event){
+    event.addEventListener("click",(e)=>{
+        console.log(e.target.textContent)
+    })
+}
