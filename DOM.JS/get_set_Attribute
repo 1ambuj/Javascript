@@ -36,7 +36,7 @@ const nav_item = document.getElementsByTagName("a")//it gives HTMLcollection
 //When we want to convert into array we can use
 const arr1 = Array.from(nav_item)
 
-console.log(Array.isArray(arr1))
+console.log(Array.isArray(arr1))//it returns boolean value ,true or false 
 
 
 //QUERY SELLCTOR ALL IT RETURN NODELIST
