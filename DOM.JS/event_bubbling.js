@@ -3,8 +3,8 @@
 //parent also clicked
 
 const grand_parent = document.querySelector(".grandparent")
-const parent = document.querySelector(".grandparent")
-const child= document.querySelector(".grandparent")
+const parent = document.querySelector(".parent")
+const child= document.querySelector(".child")
 console.log("hello world! ")
 grand_parent.addEventListener("click",()=>{
     console.log("i am grand parent")
@@ -21,3 +21,20 @@ child.addEventListener("click",()=>{
 document.body.addEventListener("click",()=>{
     console.log("i am body")
 })
+// event capturing
+
+grand_parent.addEventListener("click",()=>{
+    console.log("i am grand parent")
+},true)
+
+parent.addEventListener("click",()=>{
+    console.log("i am  parent")
+},true)
+
+child.addEventListener("click",()=>{
+    console.log("i am  child")
+},true)
+
+document.body.addEventListener("click",()=>{
+    console.log("i am body")
+},true)
