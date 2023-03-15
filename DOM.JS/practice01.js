@@ -35,10 +35,38 @@
 
 //second program
 //squre root finding
-const num = +(prompt("enter your number!! "))
-if(num/num==1){
-    console.log(num)
-}
-else{
-    console.log(num*num)
+
+
+//const num = prompt("enter the number: ")
+//const result = Math.sqrt(parseInt(num))
+//console.log(result)
+
+//program third
+//arrea of trangle
+//formula = s =(a + b + c)/2
+//area = (s*(s-a) * (s-b) * (s-c))*1/2
+
+// const a = 10;
+// const b = 10;
+// const c = 10;
+// const s = ( a + b + c)/2
+// const area = ((s*(s-a) * (s-b) * (s-c)) ** 1/2)
+// console.log(Math.sqrt(area))
+
+
+//fourth program swaping of two number
+let arr1 = [ 1,2,4,5,6,7];
+[arr1[0] ,arr1[5]] = [arr1[5],arr1[0]];
+console.log(arr1)
+
+// let a = 10;
+// let b =20;
+// let temp = a
+// a = b
+// b = temp
+// console.log(a,b)
+
+//pattern question
+for(i = 1 ;i<6 ; i++){
+    console.log(("i"*"*"))
 }
