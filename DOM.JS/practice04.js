@@ -40,3 +40,41 @@ const max =Math.max(a,b,c)
 // table(2)
 
 //ar
+let num = (prompt("enter the number: "));
+let len = num.length
+//console.log(len)
+let total = 0;
+for(let i in num){
+    total = total + num[i]**len
+}
+if(total==(+num)){
+    console.log("it is armastrong number: ")
+}
+else{
+    console.log("not aramstrong number: ")
+}
+
+//using division method
+let number = (+prompt("enter your number: "))
+let tem = number;
+sum = 0
+while(tem>0){
+    let digit= tem%10;
+    console.log(sum)
+    sum += digit**3
+    console.log(sum)
+    tem = parseInt(tem%10)
+    console.log(sum)
+}
+
+
+//some of number
+sum = 0;
+while(true){
+    let num = (+prompt("enter the number: "))
+    sum = sum + num;
+    if(num=="x"){
+        break
+    }
+}
+console.log(sum)
