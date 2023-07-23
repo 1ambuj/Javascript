@@ -41,4 +41,20 @@ console.log("hey! , ambuj")
 clearInterval(my_id)
 
 
-//call back function
+//call back function  
+
+function my_func(num1,num2,onsucsses){
+    if(typeof num1 && typeof num2 === Number){
+        console.log(num1 + num2)
+        onsucsses(num1,num2)
+    }
+    else{
+        console.log("wrong datatype!")
+    }
+}
+
+my_func("4",5,(number1,number2)=>{
+    console.log(number1*number2)
+}) 
+
+
