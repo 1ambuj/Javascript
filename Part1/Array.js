@@ -58,8 +58,3 @@ let fruit = ["mango ", "apple","pineapple"]
 // }
 
 //while loops in array
-
-let i = 0
-while(i<=fruit.length-1){
-    console.log(i)
-}

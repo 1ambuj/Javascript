@@ -8,7 +8,7 @@ const obj1 = {
 }
 // console.log(obj1.name)
 //console.log(obj1["name"])
-// obj1.qualification  = "greguated"
+// obj1.qualification  = "greguated"   // add the key value in object
 // console.log(obj1)
 //obj1["email add"] = "ambuj@1233"
 //console.log(obj1)

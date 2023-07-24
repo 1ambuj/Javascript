@@ -69,12 +69,14 @@ while(tem>0){
 
 
 //some of number
-sum = 0;
-while(true){
-    let num = (+prompt("enter the number: "))
-    sum = sum + num;
-    if(num=="x"){
-        break
-    }
-}
-console.log(sum)
+// sum = 0;
+// while(true){
+//     let num = (+prompt("enter the number: "))
+//     sum = sum + num;
+//     if(num=="x"){
+//         break
+//     }
+// }
+// console.log(sum)
+
+

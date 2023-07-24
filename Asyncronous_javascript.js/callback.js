@@ -40,10 +40,10 @@ function changetext(element,color,time,text,onsucssescallback,onfailurecallback)
 
 changetext(heading1,"green",1000,"one",()=>{
     changetext(heading2,"yellow",1000,"two",()=>{
-        changetext(heading3,"orange",1000,"three",()=>{
-            changetext(heading4,"blue",1000,"four",()=>{
-                changetext(heading5,"red",1000,"five")
-            },()=>{console.log("element does not exist")})
-        })
+        changetext(heading3,"blue",1000,"three",()=>{
+            changetext(heading4,"violet",1000,"four",()=>{
+
+            },()=>{console.log("heading4 does not exist") })
+        },()=>{console.log("heading3 does not exist") })
     },()=>{console.log("element does not exist") })
 },()=>{ console.log("element does not exist")})

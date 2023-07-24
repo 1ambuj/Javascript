@@ -71,7 +71,7 @@ console.log(fruits.sort())
 arr1.sort((a,b)=>{
     return b-a;
 })
-console.log(arr1)
+console.log(arr1)  
 
 //realstic example
 const product_detail = [
@@ -125,4 +125,4 @@ console.log(check_element)
 const my_array2 = new Array(7).fill(0)
 console.log(my_array2)
 
-console.log(my_array.fill(2,3,6))
+console.log(my_array.fill(2,3,6)) 

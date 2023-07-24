@@ -16,19 +16,28 @@
 // }
 
 //palindrome string
-// let str = prompt("enter the string: ")
-// let reverse_str = ""
+let str = prompt("enter the string: ")
+let reverse_str = ""
 
-// for(let i =str.length-1;i>=0;i--){
-//     reverse_str = reverse_str+str[i]
+for(let i =str.length-1;i>=0;i--){
+    reverse_str = reverse_str+str[i]
     
-// }
-// if(str==reverse_str){
-//     console.log("The string is palindrome string! ")
-// }
-// else{
-//     console.log("not a palindrome string! ")
-// }
+}
+if(str==reverse_str){
+    console.log("The string is palindrome string! ")
+}
+else{
+    console.log("not a palindrome string! ")
+}
 //java script program to check the accurence of number
 
-
+//
+let str2 = "hello"
+count = 0;
+for(let i =0 ; i <= str.length-1;i++){
+    console.log(i)
+    if(str(i)=="l"){
+    count = count + 1
+}
+}
+console.log(count)
