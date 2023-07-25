@@ -118,3 +118,10 @@ changetext(heading1,"one","blue",1000)
 .catch((error)=>{
      console.log(error)
 })
+
+
+//AJAX in js
+//it is a asyncronous xml 
+//when we want to takke data from the server we need http protocol
+
+
