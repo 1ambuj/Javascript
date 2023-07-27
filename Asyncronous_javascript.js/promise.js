@@ -123,5 +123,93 @@ changetext(heading1,"one","blue",1000)
 //AJAX in js
 //it is a asyncronous xml 
 //when we want to takke data from the server we need http protocol
+//with ajex, web application can send and retrive
+//data from a server asyncronously (in the background )
+
+//without interfering with the display and  
+// behaviour of the existing page  
+
+//we don't use data in xml format anymore.
+//we use json now(java script object notation)
+
+
+//we have three ways to create and send request to server 
+//1.)xmlHTTPRequest (old way of doing)
+//2.)fetch API(new way of doing)
+//3.)axios (this is the third party library)  
+
+//by using xmlhttprequest
+const url = "https://jsonplaceholder.typicode.com/posts"
+const xhr = new XMLHttpRequest()
+xhr.open("get",url); 
+// xhr.onreadystatechange =function(){
+//     if(xhr.readyState==4){
+//         console.log(xhr.readyState)  //it give the state of xmlhttprequest
+//         console.log(xhr.response)
+//     }
+//}
+
+// xhr.onload = ()=>{ 
+//     if(xhr.status>=200 && xhr.status<300){ //error handling
+//         //it calls when redy sate four
+//        // console.log(xhr) //its present in the string formet
+//         const data = JSON.parse(xhr.response)
+//         console.log(data)
+//         const id = data[3].id;
+//         console.log(id) 
+//         const xhr2 = new XMLHttpRequest()
+//         const url2 = `${url}/${id}`
+//         xhr.open("get",url2)
+//         xhr.onload=()=>{
+//             const data2 = JSON.parse(xhr.response)
+//             console.log(data2)
+
+//         }
+
+//         xhr.send()
+        
+       
+//     }
+//     else{
+//         console.log("somthing went wrong! ")
+//     }
+// }
+// xhr.onerror=()=>{
+//     console.log("net issue!")
+// }
+// xhr.send();  
+
+
+//xhr(xml http request) using promise 
+
+function sendrequest(method,url){
+    return new Promise((resolve,reject)=>{
+        const xhr = new XMLHttpRequest()
+        xhr.open(method,url)
+        xhr.onload=()=>{
+            if(xhr.status>=200 && xhr.status<300){
+                resolve(xhr.response)
+            }
+            else{
+                reject(new error("somthing wrong"))
+            }
+        xhr.send()
+        }
+    })
+}
+sendrequest("get",url)
+.then((response)=>{
+    const data = JSON.parse(response)
+    return data
+})
+.then((data)=>{
+    const id = data[3].id
+})
+.then((id)=>{
+    const url2 = `${url}/${id}`
+    return sendrequest("get",url2)
+})
+
+
 
 
